@@ -106,7 +106,7 @@
         display: none;
     }
     .offcanvas {
-        width: 41%;
+        width: 41% !important;
     }
     .mobile-list,
     .btn-close {
