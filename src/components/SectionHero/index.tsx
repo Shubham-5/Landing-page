@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="container-fluid container-xl position-relative">
         <div className="py-5">
           <div className="py-4 d-flex"></div>
-              <div className="text-white pt-5 px-mx-3 px-4 text-center div" style={{ maxWidth: 500, margin: '0 auto' }}>
+              <div className="text-white pt-5 px-mx-3 px-4 text-center div">
                 <h1 className="fw-bold px-md-3 px-0">Let's growth your business with us</h1>
                 <p className="px-md-5 px-5 mx-3 pt-2">
                   Sapiente, assumenda suscipit autem ab expedita dignissimos,

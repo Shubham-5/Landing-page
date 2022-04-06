@@ -22,6 +22,11 @@
     right: 0;
 }
 
+.container-fluid .div {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .hero-box {
     background-color: #009080;
 }
