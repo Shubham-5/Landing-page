@@ -1,0 +1,42 @@
+    section {
+        padding: 7rem 0;
+        background-color: white;
+    }
+    
+    section .bg2 {
+        background-color: #fafafa !important;
+    }
+    
+    section bg3 {
+        background-color: white;
+    }
+    
+    .heading {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+    
+    .feature {
+        display: flex;
+    }
+    
+    .feature .icon {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+        flex: 0 0 50px;
+        margin-right: 20px;
+    }
+    
+    .feature h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .icon img {
+        max-width: 100%;
+    }
+    
+    .btn .learn-more-btn a {
+        background-color: #F85A40 !important;
+    }

@@ -1,0 +1,32 @@
+.social-icons {
+    margin: 0 2px;
+    padding: 6px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+}
+
+.footer-cols {
+    padding-left: 120px;
+}
+
+.get-in-touch-btn button,
+.learn-more-btn button {
+    padding: 13px 31px;
+}
+
+.get-in-touch-btn button,
+.learn-more-btn button,
+.swiper-pagination-bullet-active,
+.social-icons {
+    background-color: #F85A40 !important;
+}
+
+@media screen and (max-width: 992px) {
+    .footer-cols {
+        padding: 0;
+    }
+}

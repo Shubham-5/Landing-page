@@ -1,0 +1,64 @@
+.bg-white .row {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.post-entry .card {
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    border: none;
+}
+
+.card-body a:last-child {
+    color: #f85a40;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card {
+    word-wrap: break-word;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.post-entry .card img {
+    border-radius: 8px;
+}
+
+.post-entry .card .meta {
+    font-size: 14px;
+    color: #7a7a7a;
+    margin-bottom: 10px;
+}
+
+.post-entry .card h2 a,
+.post-entry .card .h2 a {
+    color: #000;
+}
+
+.post-entry .card h2,
+.post-entry .card .h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: black;
+}
+
+.card-body p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 920px) {
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,106 @@
+.hero-image1 {
+    width: "300px";
+    height: "500px";
+    background-repeat: "no-repeat";
+}
+
+.hero-image2 {
+    width: "300px";
+    height: "500px";
+    background-repeat: "no-repeat";
+}
+
+.hero-image1 {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+
+.hero-image2 {
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+.hero-box {
+    background-color: #009080;
+}
+
+.hero-icons {
+    font-size: 50px;
+}
+
+.get-in-touch-btn button {
+    padding: 13px 31px;
+}
+
+.get-in-touch-btn button:hover {
+    background-color: #009080 !important;
+    border: 2px solid white;
+}
+
+.get-in-touch-btn button,
+.learn-more-btn button,
+.swiper-pagination-bullet-active,
+.social-icons {
+    background-color: #F85A40 !important;
+}
+
+.illustration-div img {
+    position: absolute;
+    left: 100px;
+    top: -90px;
+}
+
+@media screen and (max-width: 992px) {
+    .div {
+        max-width: 700px;
+    }
+    .footer-cols {
+        padding: 0;
+    }
+    .offcanvas {
+        width: 31%;
+    }
+    .hero-image1-outer,
+    .hero-image2-outer {
+        display: none;
+    }
+    .mobile-list,
+    .btn-close {
+        display: block !important;
+    }
+    .mobile-view {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image1-outer,
+    .hero-image2-outer {
+        display: none;
+    }
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 14px;
+    }
+    .d-flex svg {
+        margin-left: 25px;
+    }
+    .hero-box {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .div {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .div {
+        max-width: 700px;
+    }
+}

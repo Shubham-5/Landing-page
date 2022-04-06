@@ -1,0 +1,120 @@
+.navbar,
+.hero {
+    background-color: rgb(0, 131, 116) !important;
+}
+
+.desktop-nav ul {
+    margin-left: 30%;
+}
+
+.logo-nav {
+    padding-left: 18px;
+}
+
+.pop-over {
+    position: relative;
+    transition: 0.2s;
+}
+
+.nav-li {
+    padding: 0 1rem;
+}
+
+.navbar-nav .active a {
+    color: white !important;
+}
+
+.nav-li a:hover {
+    color: white !important;
+}
+
+.nav-li a {
+    color: rgb(39, 233, 210) !important;
+}
+
+.dropdown-li a {
+    color: black !important;
+}
+
+.dropdown-li {
+    padding: 0.5rem 0;
+}
+
+.content,
+.content2 {
+    position: absolute;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    width: 180px;
+    height: 150px;
+    z-index: 1;
+}
+
+.content {
+    bottom: -200px;
+    left: 0px;
+}
+
+.content2 {
+    bottom: -80px;
+    right: -180px;
+}
+
+.content .content-item:hover,
+.content2 .content-item:hover {
+    color: red !important;
+}
+
+.pop-over:hover .content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%) translateY(-20px);
+}
+
+.pop-over2:hover .content2 {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%) translateY(-20px);
+}
+
+.m-nav {
+    display: none;
+}
+
+.accordion-button {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+}
+
+@media screen and (max-width: 992px) {
+    .m-nav {
+        display: flex;
+    }
+    .logo-nav {
+        display: none;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    .offcanvas {
+        width: 41%;
+    }
+    .mobile-list,
+    .btn-close {
+        display: block !important;
+    }
+    .mobile-view {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

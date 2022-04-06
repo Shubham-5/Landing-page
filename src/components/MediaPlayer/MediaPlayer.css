@@ -1,0 +1,81 @@
+.learn-more-btn button {
+    background-color: #F85A40 !important;
+}
+
+.growing-section-list li::before {
+    content: '\2713';
+    color: red;
+    padding-right: 12px;
+}
+
+iframe {
+    height: 450px;
+    width: 100%;
+}
+
+.modals {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    z-index: 10;
+}
+
+.modals:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.cls_button {
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    border: none;
+    color: black;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.cls_button svg {
+    margin-right: 4px;
+    color: rgb(240, 230, 230);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.cls_button::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.video {
+    width: 880px;
+}
+
+.modal-cls-button .modals {
+    cursor: pointer;
+}
+
+.video-outer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
