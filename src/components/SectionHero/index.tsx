@@ -10,7 +10,7 @@ const HeroSection = () => {
           <div className="py-4 d-flex"></div>
               <div className="text-white pt-5 px-mx-3 px-4 text-center div">
                 <h1 className="fw-bold px-md-3 px-0">Let's growth your business with us</h1>
-                <p className="px-md-5 px-5 mx-3 pt-2">
+                <p className="px-md-5 mx-3 pt-2">
                   Sapiente, assumenda suscipit autem ab expedita dignissimos,
                   corrupti iusto nobis ex aperiam cumque reprehenderit, saepe
                   culpa qui eos ullam minima quo, consequuntur.
@@ -32,7 +32,7 @@ const HeroSection = () => {
         </div>
 
         <div className="pt-5">
-          <div className="hero-box py-5 px-5 rounded-top">
+          <div className="hero-box py-5 rounded-top">
             <div className="row">
               <div className="col-lg-4 text-white d-flex">
                 <div>

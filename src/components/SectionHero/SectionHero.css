@@ -27,6 +27,11 @@
     margin: 0 auto;
 }
 
+.container-fluid .div p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
 .hero-box {
     background-color: #009080;
 }
@@ -96,8 +101,9 @@
         margin-left: 25px;
     }
     .hero-box {
-        max-width: 400px;
+        max-width: 272px;
         margin: 0 auto;
+        padding: 50px;
     }
     .div {
         max-width: 700px;

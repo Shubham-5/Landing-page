@@ -11,14 +11,14 @@ const [modal, setModal] = useState(false);
   };
   
     return (
-        <div className="pb-5 bg-white">
-      <div className="container media">
+        <div className="pb-5 bg-white ">
+      <div className="container media ">
         <div className="pb-4">
           <div className="pb-5">
             <div className="row d-flex">
               <div className="col-lg-7 order-lg-1 order-2 ">
                 <div className="modals position-relative " onClick={openModal}>
-                  <button className="cls_button position-absolute "><BsPlayCircleFill/ ></button>
+                  <button className="cls_button position-absolute "><BsPlayCircleFill size={70} /></button>
                   <img src="https://untree.co/demos/impact/images/hero-min.jpg" className="w-100 h-100" alt=""  onClick={openModal}  />
                 </div>
                 {modal? 

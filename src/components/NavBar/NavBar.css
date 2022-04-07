@@ -11,6 +11,11 @@
     padding-left: 18px;
 }
 
+.navbar-toggler {
+    color: white !important;
+    border: none;
+}
+
 .pop-over {
     position: relative;
     transition: 0.2s;

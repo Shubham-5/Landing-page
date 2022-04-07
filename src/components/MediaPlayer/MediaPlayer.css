@@ -32,31 +32,29 @@ iframe {
 }
 
 .cls_button {
-    font-size: 70px;
     background-color: rgba(0, 0, 0, 0);
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1em;
-    width: 1em;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     border: none;
     color: black;
+    background-color: black;
     cursor: pointer;
     z-index: 10;
 }
 
 .cls_button svg {
-    margin-right: 4px;
+    position: absolute;
+    right: 0.5px;
+    height: 80px;
+    width: 80px;
     color: rgb(240, 230, 230);
     cursor: pointer;
     z-index: 2;
-}
-
-.cls_button::before {
-    content: "";
-    display: inline-block;
-    margin-right: 5px;
 }
 
 .video {

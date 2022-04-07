@@ -30,7 +30,7 @@ const Slider = () => {
           <div className="slide_container">
             <div className="pt-5 pb-4">
               <img
-                className="slider-img border border-5 border-white shadow-sm"
+                className="slider-img border border-5 border-white shadow-lg"
                 src="https://untree.co/demos/impact/images/person_1.jpg"
                 alt=""
               />
@@ -49,7 +49,7 @@ const Slider = () => {
           <div className="slide_container">
             <div className="pt-5 pb-4">
               <img
-                className="slider-img border border-5 border-white shadow-sm"
+                className="slider-img border border-5 border-white shadow-lg"
                 src="https://untree.co/demos/impact/images/person_2.jpg"
                 alt=""
               />
@@ -69,7 +69,7 @@ const Slider = () => {
           <div className="slide_container">
             <div className="pt-5 pb-4">
               <img
-                className="slider-img border border-5 border-white shadow-sm"
+                className="slider-img border border-5 border-white shadow-lg"
                 src="https://untree.co/demos/impact/images/person_3.jpg"
                 alt=""
               />

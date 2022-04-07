@@ -5,6 +5,12 @@
     cursor: pointer;
 }
 
+.social-icons svg {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
 footer {
     background-color: black;
 }
