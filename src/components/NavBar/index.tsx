@@ -1,119 +1,107 @@
-import './NavBar.css'
-import {FaChevronDown,FaChevronRight} from 'react-icons/fa';
-import SideBar from './SideBar';
+import React, { useState } from "react";
+
+import "./NavBar.css";
+import {
+  FaBars,
+  FaChevronDown,
+  FaChevronRight,
+  FaWindowClose,
+} from "react-icons/fa";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { MdClose } from "react-icons/md";
 const NavBar = () => {
-    return (
-       <nav className="navbar navbar-expand-lg navbar-dark bg-light py-3">
-        <div className="container d-flex justify-content-between align-items-baseline">
-        
- <a className="navbar-brand text-white" >
-              <h4 className="fw-bold logo-nav">Impact</h4>
-            </a>
-            
-          
-<div className="desktop-nav">
-   <ul className="list-unstyled d-flex justify-content-end navbar-nav w-100 ">
-                <li className=" nav-li active">
-                     <a className="text-decoration-none">
+  const [inActive, setinActive] = useState(false);
+  const [menuOne, setmenuOne] = useState(false);
+  const [menuTwo, setmenuTwo] = useState(false);
+  return (
+    <div className='site-nav'>
+      <h2 className='navigation-header'>
+        <a href='/#'>Impact</a>
+      </h2>
+      <ul className='nav-list'>
+        <li>
+          <a href='/#'>Home</a>
+        </li>
+        <li className='hover-element'>
+          <a href='/#'>
+            Dropdown
+            <FaChevronDown style={{ marginLeft: "4px", fontSize: "10px" }} />
+          </a>
+        </li>
 
-                  home
-                     </a>
-                </li>
-                <li className="dropdown pop-over nav-li">
-                  <a className="text-decoration-none">
-                    Dropdown 
-                    <span className="ps-2"><FaChevronDown /></span>
-                  </a>
-                  <ul
-                    className=" content list-unstyled pt-3 ps-3"
-                  >
-                    <li className=" dropdown-li">
-                      <a href="#"  className="content-item text-decoration-none text-dark ">Menu One</a>
-                    </li>
+        <ul id='menu-drop-hover'>
+          <li>Menu one</li>
+          <li className='sub-hover-li'>
+            Menu two
+            <FaChevronDown
+              style={{
+                float: "right",
+                fontSize: "23px",
+                transform: "rotate(-90deg)",
+              }}
+            />
+          </li>
+          <ul id='sub-menu-drop'>
+            <li>sub Menu one</li>
+            <li>sub Menu two</li>
+            <li>sub Menu three</li>
+          </ul>
+          <li>Menu three</li>
+        </ul>
+        <li>
+          <a href='/#'>Services</a>
+        </li>
+        <li>
+          <a href='/#'>Blog</a>
+        </li>
+        <li>
+          <a href='/#'>About</a>
+        </li>
+        <li>
+          <a href='/#'>Contact Us</a>
+        </li>
+      </ul>
 
-                    <li className=" pop-over2 dropdown-li">
-                      <a href="#"  className="content-item text-decoration-none text-dark ">Menu Two
-                      <span className="ps-5"><FaChevronRight /></span>
-                      </a>
-
-                      <ul className="content2 shadow-sm list-unstyled pt-3 ps-3">
-                        <li className="dropdown-li">
-                          <a href="#"  className="content-item text-decoration-none ">Sub Menu One</a>
-                        </li>
-                        <li className="dropdown-li">
-                          <a href="#"  className="content-item text-decoration-none" >Sub Menu Two</a>
-                        </li>
-                        <li className="dropdown-li">
-                          <a href="#"  className="content-item text-decoration-none ">Sub Menu Three</a>
-                        </li>
-                      
-                      </ul>
-
-                    </li>
-
-                    <li className="dropdown-li">
-                      <a href="#" className="content-item text-decoration-none  ">Menu Three</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className=" nav-li">
-                  <a href="#"  className="text-decoration-none">
-                    Services
-                  </a>
-                </li>
-                <li className="nav-li">
-                  <a href="#" className=" text-decoration-none">
-                    Blog
-                  </a>
-                </li>
-                <li className="nav-li">
-                  <a href="#" className=" text-decoration-none">
-                    About
-                  </a>
-                </li>
-                <li className="nav-li">
-                  <a href="#" className="text-decoration-none">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-              </div>
-
-          <div className="mobile-view py-2">
-           
-          <a className="navbar-brand text-white m-nav" >
-              <h4 className="fw-bold">Impact</h4>
-            </a>
-               <button
-              className="navbar-toggler btn"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-              aria-expanded="false"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-         
-
-          </div>
-          <div
-            className=" offcanvas offcanvas-end"
-            aria-labelledby="offcanvasRightLabel"
-            id="offcanvasRight"
-          >
-            <div className="offcanvas-header w-100 d-flex justify-content-end">
-        
-            </div>
-
-            <div className="offcanvas-body">
-              <span className="mobile-offcanvas"><SideBar/></span>
-              
-            </div>
-          </div>
+      <a className='menu-icon' href='/#'>
+        <FaBars onClick={() => setinActive(!inActive)} />
+      </a>
+      <div id='side-bar' className={inActive ? "inactive" : ""}>
+        <div className='Close-icon'>
+          <MdClose className='icon-x' onClick={() => setinActive(!inActive)} />
         </div>
-      </nav>
-    )
-}
+        <ul className='class-list'>
+          <li>home</li>
+          <li onClick={() => setmenuOne(!menuOne)}>
+            dropdown{" "}
+            <RiArrowDropDownLine
+              id='icon-down'
+              className={menuOne ? "icon-active" : ""}
+            />
+          </li>
+          <ul id='drop-menu-1' className={menuOne ? "Active-one" : ""}>
+            <li>Menu One</li>
+            <li onClick={() => setmenuTwo(!menuTwo)}>
+              Menu two{" "}
+              <RiArrowDropDownLine
+                id='icon-down'
+                className={menuTwo ? "icon-active" : ""}
+              />
+            </li>
+            <ul id='sub-menu' className={menuTwo ? "Active-two" : ""}>
+              <li>sub menu one</li>
+              <li>sub menu two</li>
+              <li>sub menu three</li>
+            </ul>
+            <li>Menu three</li>
+          </ul>
+          <li>services </li>
+          <li>blog</li>
+          <li>about</li>
+          <li>contact us</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-export default NavBar
+export default NavBar;

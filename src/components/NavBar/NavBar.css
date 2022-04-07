@@ -1,125 +1,239 @@
-.navbar,
-.hero {
-    background-color: rgb(0, 131, 116) !important;
+.site-nav {
+    padding-top: 32px;
+    padding-bottom: 0;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #008374;
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 400;
+    font-size: 15px;
 }
 
-.desktop-nav ul {
-    margin-left: 30%;
+.site-nav h2 {
+    margin-left: 5%;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 0 5%;
+    color: var(--bs-light);
 }
 
-.logo-nav {
-    padding-left: 18px;
+.site-nav h2 a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.navbar-toggler {
-    color: white !important;
-    border: none;
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    width: 30rem;
+    justify-content: space-between;
+    margin-right: 5%;
+    box-sizing: border-box;
+    color: #ecececae;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.pop-over {
+.nav-list li a {
+    cursor: pointer;
+    color: #ecececae;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    color: var(--bs-white) !important;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    transition: ease-in-out 150ms;
+}
+
+@media (max-width: 800px) {
+    .navigation-header {
+        padding-left: 20px;
+    }
+    .nav-list {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        margin-right: 15%;
+    }
+    .menu-icon svg {
+        margin-bottom: 40px !important;
+    }
+    .menu-icon:hover {
+        transform: scaleY(0.8);
+        color: #fff;
+    }
+}
+
+#side-bar {
+    position: fixed;
+    z-index: 4;
+    width: 300px;
+    background: #fafafa;
+    line-height: 1.8;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 400ms;
+    padding: 27px;
+    text-align: initial;
+    height: 100vh;
+    top: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.inactive {
+    transform: translate(0%) !important;
+}
+
+.class-list {
+    list-style-type: none;
+    margin-top: 36px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.class-list li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icon-x {
+    font-size: 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 16px;
+    color: black;
+    background-color: white !important;
+}
+
+.class-list li:hover {
+    color: #f85a40;
+}
+
+.icon-down {
+    font-size: 30px;
+    float: right;
+}
+
+#drop-menu-1 {
+    display: none;
+    flex-direction: column;
     position: relative;
-    transition: 0.2s;
+    border: none;
+    margin-left: 0px;
+    list-style-type: none;
+    padding-left: 20px;
+    overflow: hidden;
 }
 
-.nav-li {
-    padding: 0 1rem;
+.Active-one {
+    display: block !important;
 }
 
-.navbar-nav .active a {
-    color: white !important;
-}
-
-.nav-li a:hover {
-    color: white !important;
-}
-
-.nav-li a {
-    color: rgb(39, 233, 210) !important;
-}
-
-.dropdown-li a {
-    color: black !important;
-}
-
-.dropdown-li {
-    padding: 0.5rem 0;
-}
-
-.content,
-.content2 {
-    position: absolute;
-    background-color: white;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.2s;
-    width: 180px;
-    height: 150px;
-    z-index: 1;
-}
-
-.content {
-    bottom: -200px;
-    left: 0px;
-}
-
-.content2 {
-    bottom: -80px;
-    right: -180px;
-}
-
-.content .content-item:hover,
-.content2 .content-item:hover {
-    color: red !important;
-}
-
-.pop-over:hover .content {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0%) translateY(-20px);
-}
-
-.pop-over2:hover .content2 {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0%) translateY(-20px);
-}
-
-.m-nav {
+#sub-menu {
+    list-style-type: none;
+    padding-left: 20px;
     display: none;
 }
 
-.accordion-button {
-    font-size: 14px;
-    font-family: sans-serif;
+.Active-two {
+    display: block !important;
 }
 
-.accordion-button:focus,
-.accordion-button:not(.collapsed) {
-    box-shadow: none;
-    background-color: transparent;
+#icon-down {
+    font-size: 30px;
+    float: right;
+    transition: all 250ms;
+}
+
+.icon-active {
+    transform: rotate(180deg);
+}
+
+#menu-drop-hover {
+    position: absolute;
+    right: 283px;
+    top: 20%;
+    /* display: none; */
+    visibility: hidden;
+    background: white;
+    list-style-type: none;
     color: black;
+    padding-top: 15px;
+    padding-bottom: 22px;
+    width: 184px;
+    text-align: initial;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: top ease-in-out 180ms;
+    text-transform: capitalize;
+    font-size: 15px;
 }
 
-@media screen and (max-width: 992px) {
-    .m-nav {
-        display: flex;
-    }
-    .logo-nav {
-        display: none;
-    }
-    .desktop-nav {
-        display: none;
-    }
-    .offcanvas {
-        width: 41% !important;
-    }
-    .mobile-list,
-    .btn-close {
-        display: block !important;
-    }
-    .mobile-view {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
+#menu-drop-hover li:hover {
+    color: #f85a40;
+    cursor: pointer;
+}
+
+#menu-drop-hover li {
+    padding: 5px;
+}
+
+.hover-element {
+    padding-bottom: 120px;
+}
+
+.hover-element:hover+#menu-drop-hover,
+#menu-drop-hover:focus,
+#menu-drop-hover:hover {
+    z-index: 2;
+    visibility: visible;
+    top: 25%;
+}
+
+#sub-menu-drop {
+    /* display: block; */
+    visibility: hidden;
+    position: absolute;
+    list-style-type: none;
+    background: white;
+    right: -155px;
+    top: 85%;
+    padding: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 160px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: top ease-in-out 180ms;
+    text-transform: capitalize;
+}
+
+#sub-menu-drop li {
+    padding: 5px;
+}
+
+.sub-hover-li:hover+#sub-menu-drop {
+    visibility: visible;
+    z-index: 3;
+    top: 40%;
+}
+
+#sub-menu-drop:hover {
+    visibility: visible;
+    top: 40%;
+}
+
+#sub-menu-drop:focus {
+    visibility: visible;
+    top: 40%;
 }

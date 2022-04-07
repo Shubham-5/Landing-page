@@ -1,3 +1,7 @@
+.hero {
+    background: #008374;
+}
+
 .hero-image1 {
     width: "300px";
     height: "500px";
@@ -20,6 +24,11 @@
     position: absolute;
     top: 70px;
     right: 0;
+}
+
+.hero-box p {
+    max-width: 550px;
+    color: #c4c4c4;
 }
 
 .container-fluid .div {
@@ -53,7 +62,7 @@
 .learn-more-btn button,
 .swiper-pagination-bullet-active,
 .social-icons {
-    background-color: #F85A40 !important;
+    background-color: #f85a40 !important;
 }
 
 .illustration-div img {
@@ -70,7 +79,7 @@
         padding: 0;
     }
     .offcanvas {
-        width: 31%;
+        width: 51%;
     }
     .hero-image1-outer,
     .hero-image2-outer {

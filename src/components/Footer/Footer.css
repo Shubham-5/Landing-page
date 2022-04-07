@@ -1,14 +1,23 @@
-.social-icons {
+.icn-div span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     margin: 0 2px;
-    padding: 6px 9px;
+    position: relative;
+    background: #f85a40;
     border-radius: 50%;
-    cursor: pointer;
+    color: #fff;
 }
 
-.social-icons svg {
-    display: grid;
-    place-items: center;
-    cursor: pointer;
+.icn-div svg {
+    color: white;
+    font: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 footer {
@@ -26,9 +35,8 @@ footer {
 
 .get-in-touch-btn button,
 .learn-more-btn button,
-.swiper-pagination-bullet-active,
-.social-icons {
-    background-color: #F85A40 !important;
+.swiper-pagination-bullet-active {
+    background-color: #f85a40 !important;
 }
 
 @media screen and (max-width: 992px) {
