@@ -20,17 +20,12 @@
 .quote {
     font-size: 20px;
     color: black;
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
 }
 
 @media screen and (max-width: 576px) {
     .swiper-button-next,
     .swiper-button-prev {
         display: none !important;
-    }
-    .quote {
-        font-size: 15px;
-        color: black;
-        font-family: 'Georgia', serif;
     }
 }
