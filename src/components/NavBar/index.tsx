@@ -10,9 +10,9 @@ import {
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdClose } from "react-icons/md";
 const NavBar = () => {
-  const [inActive, setinActive] = useState(false);
-  const [menuOne, setmenuOne] = useState(false);
-  const [menuTwo, setmenuTwo] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  const [menuOne, setMenuOne] = useState(false);
+  const [menuTwo, setMenuTwo] = useState(false);
   return (
     <div className='site-nav'>
       <h2 className='navigation-header'>
@@ -63,15 +63,15 @@ const NavBar = () => {
       </ul>
 
       <a className='menu-icon' href='/#'>
-        <FaBars onClick={() => setinActive(!inActive)} />
+        <FaBars onClick={() => setIsActive(!isActive)} />
       </a>
-      <div id='side-bar' className={inActive ? "inactive" : ""}>
+      <div id='side-bar' className={isActive ? "inactive" : ""}>
         <div className='Close-icon'>
-          <MdClose className='icon-x' onClick={() => setinActive(!inActive)} />
+          <MdClose className='icon-x' onClick={() => setIsActive(!isActive)} />
         </div>
         <ul className='class-list'>
           <li>home</li>
-          <li onClick={() => setmenuOne(!menuOne)}>
+          <li onClick={() => setMenuOne(!menuOne)}>
             dropdown{" "}
             <RiArrowDropDownLine
               id='icon-down'
@@ -80,7 +80,7 @@ const NavBar = () => {
           </li>
           <ul id='drop-menu-1' className={menuOne ? "Active-one" : ""}>
             <li>Menu One</li>
-            <li onClick={() => setmenuTwo(!menuTwo)}>
+            <li onClick={() => setMenuTwo(!menuTwo)}>
               Menu two{" "}
               <RiArrowDropDownLine
                 id='icon-down'
