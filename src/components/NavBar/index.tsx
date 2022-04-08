@@ -36,7 +36,9 @@ const NavBar = () => {
             <FaChevronDown
               style={{
                 float: "right",
-                fontSize: "23px",
+                marginRight: "8px",
+                marginTop: "10px",
+                fontSize: "9px",
                 transform: "rotate(-90deg)",
               }}
             />
