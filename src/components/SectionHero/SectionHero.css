@@ -2,6 +2,11 @@
     background: #008374;
 }
 
+.small-herp-div {
+    padding-left: 5px;
+    padding-right: 7px;
+}
+
 .hero-image1 {
     width: "300px";
     height: "500px";
@@ -16,13 +21,13 @@
 
 .hero-image1 {
     position: absolute;
-    top: 70px;
+    top: 10px;
     left: 20px;
 }
 
 .hero-image2 {
     position: absolute;
-    top: 70px;
+    top: 10px;
     right: 0;
 }
 
@@ -110,7 +115,6 @@
         margin-left: 25px;
     }
     .hero-box {
-        max-width: 272px;
         margin: 0 auto;
         padding: 50px;
     }

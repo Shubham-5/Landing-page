@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div className='container-fluid container-xl position-relative'>
         <div className='py-5'>
           <div className='py-4 d-flex'></div>
-          <div className='text-white pt-5 px-mx-3 px-4 text-center div'>
+          <div className='text-white px-mx-3 px-4 text-center div'>
             <h1 className='fw-bold px-md-3 px-0'>
               Let's growth your business with us
             </h1>
@@ -43,7 +43,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className='pt-5'>
+        <div className='pt-5 small-hero-div'>
           <div className='hero-box py-5 px-5 rounded-top'>
             <div className='row '>
               <div className='col-lg-4 text-white d-flex'>
